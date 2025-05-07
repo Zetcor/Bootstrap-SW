@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap</title>
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <style>
+            .shadow-span {
+                display: flex;
+                gap: 20px;
+                width: 4000px;
+                height: 200px;
+            }
+
+            .task-span {
+                display: flex;
+                gap: 10px;
+            }
+
+            .task-span span {
+                display: inline-block;
+                width: 200px;
+                height: 150px;
+            }
+            #rect {
+                display: inline-block;
+                width: 300px;
+                height: 120px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+        <!-- Task 1 -->
+        <div class="container">
+            <h1 class="display-2">TASK 1: Application of D-None,d-inline and d-block</h1>
+            <h1 class="bg-info text-white">I am an h1 block</h1>
+            <h1 class="bg-warning text-white d-inline">I am an h1 inline block</h1>
+            <h1 class="bg-primary text-white d-inline">I am another h1 inline block</h1>
+            <h1 class="bg-dark text-white d-none">I am a hidden h1 block</h1>
+            <span class="bg-success text-white d-block">I am a span block</span>
+            <span class="bg-dark text-white">I am a span inline block</span>
+            <span class="bg-primary text-white">I am another span inline block</span>
+            <h1 class="bg-info d-none d-md-block">I am hidden when the viewport is sm below</h1>
+            <h1 class="bg-secondary d-block d-md-none">I am hidden when the viewport is md above</h1>
+            <h1 class="bg-primary d-block d-lg-none">I am hidden when the viewport is lg above</h1>
+        </div>
+
+        <br>
+
+        <!-- Task 2 -->
+        <div class="container">
+            <h1 class="display-2">TASK 2: BREAKPOINTS WITH DISPLAY CONTROL</h1>
+            <h2>The Current Viewport is:
+                <span class="d-inline d-sm-none bg-light text-info">XS</span>
+                <span class="d-none d-sm-inline d-md-none bg-light text-primary">SM</span>
+                <span class="d-none d-md-inline d-lg-none bg-light text-secondary">MD</span>
+                <span class="d-none d-lg-inline d-xl-none bg-light text-success">LG</span>
+                <span class="d-none d-xl-inline d-xxl-none bg-light text-info">XL</span>
+                <span class="d-none d-xxl-inline bg-light text-dark">XXL</span>
+            </h2>
+        </div>
+
+        <br>
+
+        <!-- Task 3 -->
+        <div class="container">
+            <h1 class="display-2">TASK 3: APPLICATION OF BORDER ADDITIVE</h1>
+            <div class="task-span">
+                <span class="border bg-dark border-danger border-3 text-light m-0">ALL BORDERS with m-1</span>
+                <span class="border-start bg-dark border-danger border-3 text-light m-1">ONLY START BORDER with m-2</span>
+                <span class="border-end bg-dark border-danger border-3 text-light m-2">ONLY END BORDER with m-3</span>
+                <span class="border-top bg-dark border-danger border-3 text-light m-3">ONLY TOP BORDER with m-4</span>
+                <span class="border-bottom bg-dark border-danger border-3 text-light m-4">ONLY BOTTOM BORDER with me-4</span>
+                <span class="border-start border-end bg-dark border-danger border-3 text-light m-5">ONLY LEFT AND RIGHT BORDER with m-5</span>
+                <span class="border-top border-bottom bg-dark border-danger border-3 text-light m-5">ONLY TOP AND BOTTOM BORDER with m-5</span>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Task 4 -->
+        <div class="container p-3">
+            <h1 class="display-2">TASK 4: APPLICATION OF BORDER SUBTRACTIVE</h1>
+            <div class="task-span">
+                <span class="border-0 bg-success border-dark border-3 text-warning py-5">NO BORDERS with py-5</span>
+                <span class="border border-start-0 bg-success border-dark border-3 text-warning px-4">NO START BORDER with px-4</span>
+                <span class="border border-end-0 bg-success border-dark border-3 text-warning pt-3">NO END BORDER with pt-3</span>
+                <span class="border border-top-0 bg-success border-dark border-3 text-warning pb-1">NO TOP BORDER with pb-1</span>
+                <span class="border border-bottom-0 bg-success bborder-dark border-3 text-warning pe-5">NO BOTTOM BORDER with pe-5</span>
+                <span class="border border-start-0 border-end-0 bg-success border-dark border-3 text-warning ps-2">NO LEFT AND RIGHT BORDER with ps-2</span>
+                <span class="border border-top-0 border-bottom-0 bg-success border-dark border-3 text-warning p-0">NO TOP AND BOTTOM BORDER with p-0</span>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Task 5 -->
+        <div class="container">
+            <h1 class="display-2">TASK 5: APPLICATION OF BORDER WIDTH,COLOR AND RADIUS</h1>
+            <div class="task-span">
+                <span class="border bg-danger border-black border-1 rounded text-light">ALL ROUNDED with border-1</span>
+                <span class="border bg-danger border-black border-2 rounded-top text-light">ONLY TOP ROUNDED with border-2</span>
+                <span class="border bg-danger border-black border-3 rounded-end text-light">ONLY END ROUNDED with border-3</span>
+                <span class="border bg-danger border-black border-4 rounded-bottom text-light">ONLY BOTTOM ROUNDED with border-4</span>
+                <span class="border bg-danger border-black border-5 rounded-start text-light">ONLY START ROUNDED with border-5</span>
+                <span class="border bg-danger border-black border-5 rounded-circle text-light pt-5 ps-3">CIRCLE ROUNDED with border-5</span>
+                <span class="border bg-danger border-black border-5 rounded-pill text-light p-4" id="rect">PILL ROUNDED with border-5</span>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Task 6 -->
+        <div class="container">
+            <h1 class="display-2">TASK 6: APPLICATION OF ROUNDED SIZE & SHADOW</h1>
+                <div class="shadow-span">
+                    <span class="border bg-body border-danger border-2 rounded-0 text-dark shadow-sm p-3">SMALL SHADOW with rounded-0</span>
+                    <span class="border bg-body border-danger border-2 rounded-1 text-dark shadow p-3">REGULAR SHADOW with rounded-1</span>
+                    <span class="border bg-body border-danger border-2 rounded-2 text-dark shadow-lg p-3">LARGE SHADOW with rounded-2</span>
+                    <span class="border bg-body border-danger border-2 rounded-3 text-dark shadow-lg p-3">LARGE SHADOW with rounded-3</span>
+                </div>
+        </div>
+
+    </body>
+</html>
